@@ -1,0 +1,33 @@
+<!-- Imagen principal del home -->
+<div class="imagenprincipaldiv">
+  <img src="../../../assets/imagenprincipal.jpg" class="imagenprincipal">
+  <h1 class="titulo bitcount-grid-single-uniquifier">
+    LOS MEJORES PROCESADORES DEL MERCADO
+  </h1>
+</div>
+
+<!-- Sección de productos -->
+<div class="container">
+  <div class="row">
+    <!-- Bucle que muestra cada producto -->
+    <div class="col-md-4 mb-4" *ngFor="let producto of productos">
+      <div class="card h-100">
+        <img [src]="producto.imagen" class="card-img-top" [alt]="producto.nombre">
+        <div class="card-body d-flex flex-column">
+          <h5 class="card-title">{{ producto.nombre }}</h5>
+          <p class="card-text">{{ producto.descripcion }}</p>
+          <p><strong>Precio:</strong> ${{ producto.precio }}</p>
+          <p><strong>Stock:</strong> {{ producto.stock }}</p>
+          <button type="button" class="btn btn-dark mt-auto" (click)="agregarAlCarrito(producto)">
+            Agregar al carrito
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- Componente del carrito -->
+<!-- Aquí se "inyecta" el componente hijo con sus propiedades -->

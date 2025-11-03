@@ -1,0 +1,8 @@
+footer a:hover {
+  text-decoration: underline;
+  color: #f8f9fa; /* Ligero cambio de color al pasar el mouse */
+}
+
+footer h5 {
+  font-weight: bold;
+}

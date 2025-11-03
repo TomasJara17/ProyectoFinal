@@ -1,0 +1,37 @@
+<div class="container py-5">
+  <!-- Título principal -->
+  <div class="text-center mb-5">
+    <h1 class="display-4 fw-bold">Sobre Nosotros</h1>
+    <p class="lead text-muted">
+      En <strong>Mi Tienda</strong> ofrecemos los mejores procesadores y componentes del mercado, 
+      garantizando calidad, rendimiento y atención excepcional.
+    </p>
+  </div>
+
+  <!-- Sección de nuestro equipo -->
+  <div class="text-center mb-4">
+    <h2 class="h3 fw-bold mb-3">Nuestro Equipo</h2>
+    <p class="text-muted">Profesionales apasionados por la tecnología y la innovación.</p>
+  </div>
+
+  <!-- Tarjetas de miembros del equipo -->
+  <div class="row justify-content-center">
+    <div class="col-md-4 mb-4" *ngFor="let miembro of equipo">
+      <div class="card h-100 shadow-sm border-0 hover-shadow">
+        <img [src]="miembro.foto" class="card-img-top" [alt]="miembro.nombre">
+        <div class="card-body text-center">
+          <h5 class="card-title fw-bold">{{ miembro.nombre }}</h5>
+          <p class="card-text text-muted">{{ miembro.puesto }}</p>
+          <div>
+            <a *ngIf="miembro.linkedin" [href]="miembro.linkedin" target="_blank" class="text-dark me-2">
+              <i class="bi bi-linkedin"></i>
+            </a>
+            <a *ngIf="miembro.twitter" [href]="miembro.twitter" target="_blank" class="text-dark">
+              <i class="bi bi-twitter"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

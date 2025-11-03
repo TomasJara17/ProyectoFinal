@@ -1,0 +1,15 @@
+.gif {
+  margin-top: 40px;
+  margin-bottom: 0px;
+  position:relative;
+  
+}
+.absoluto {
+   position: absolute;
+  top: 50%;             /* centra verticalmente */
+  left: 50%;            /* centra horizontalmente */
+  transform: translate(-50%, -50%); /* corrige el centrado */
+  color: white;         /* color del texto */
+  font-size: 4em;
+  text-shadow: 2px 2px 5px black; /* mejora la legibilidad */
+}
