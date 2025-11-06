@@ -17,7 +17,7 @@
   <!-- Tarjetas de miembros del equipo -->
   <div class="row justify-content-center">
     <div class="col-md-4 mb-4" *ngFor="let miembro of equipo">
-      <div class="card h-100 shadow-sm border-0 hover-shadow">
+      <div class="card h-100 shadow-sm border-1 hover-shadow">
         <img [src]="miembro.foto" class="card-img-top" [alt]="miembro.nombre">
         <div class="card-body text-center">
           <h5 class="card-title fw-bold">{{ miembro.nombre }}</h5>

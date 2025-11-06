@@ -20,25 +20,25 @@ interface MiembroEquipo {
 export class AboutComponent {
   equipo: MiembroEquipo[] = [
     {
-      nombre: 'Ana Pérez',
-      puesto: 'CEO & Fundadora',
-      foto: '../../../assets/equipo/ana.jpg',
-      linkedin: '#',
-      twitter: '#'
+      nombre: 'exclavo',
+      puesto: 'exclavo1',
+      foto: '../../../assets/fotocardabout.png',
+      linkedin: 'https://ar.linkedin.com/',
+      twitter: 'https://ar.linkedin.com/'
     },
     {
-      nombre: 'Luis Gómez',
-      puesto: 'Desarrollador Senior',
-      foto: '../../../assets/equipo/luis.jpg',
-      linkedin: '#',
-      twitter: '#'
+      nombre: 'exclavo',
+      puesto: 'exclavo2',
+      foto: '../../../assets/fotocardabout.png',
+      linkedin: 'https://ar.linkedin.com/',
+      twitter: 'https://ar.linkedin.com/'
     },
     {
-      nombre: 'María López',
-      puesto: 'Marketing & Ventas',
-      foto: '../../../assets/equipo/maria.jpg',
-      linkedin: '#',
-      twitter: '#'
+      nombre: 'exclavo',
+      puesto: 'exclavo3',
+      foto: '../../../assets/fotocardabout.png',
+      linkedin: 'https://ar.linkedin.com/',
+      twitter: 'https://ar.linkedin.com/'
     }
   ];
 }

@@ -1,0 +1,22 @@
+.contenedor {
+    display: flex;
+
+
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem; /* espacio entre cards */
+ 
+}
+.card {
+  width: 100%;
+   margin-top: 40px;
+    height: 416px;
+}
+.card-img-top {
+  height: 200px !important;
+  object-fit: cover;
+  width: 100%;
+  display: block;
+}

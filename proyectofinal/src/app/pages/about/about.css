@@ -3,6 +3,7 @@
   transform: translateY(-5px);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+   border: 5px solid black;  
 }
 
 .card img {
@@ -25,4 +26,10 @@ i {
 
 i:hover {
   color: #0d6efd; /* Azul bootstrap al pasar el mouse */
+}
+h1 {
+  color: gold !important
+}
+h2{
+  color: gold;
 }
