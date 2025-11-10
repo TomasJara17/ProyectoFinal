@@ -6,8 +6,9 @@ import { Quejas } from './pages/quejas/quejas';
 import { CarritoComponent } from './pages/carrito/carrito';
 import { Todos } from './pages/todos/todos';
 import { Galeria } from './pages/galeria/galeria';
-import { Marcas } from './pages/marcas/marcas';
-import { App } from './app';
+import { Alianzas } from './pages/alianzas/alianzas';
+import { AyudaComponent } from './pages/ayuda/ayuda.component';
+import { TerminosLegalesComponent } from './pages/terminos-legales/terminos-legales.component';
 export const routes: Routes = [
     {path: '', component:Home},
     {path:'home', component:Home},
@@ -17,5 +18,8 @@ export const routes: Routes = [
     {path:'carrito', component:CarritoComponent},
     {path:'todos', component:Todos},
     {path:'galeria', component:Galeria},
-    {path:'marcas', component:Marcas}
+    {path:'contacto', component:Contacto},
+    {path:'alianzas', component:Alianzas},
+    {path: 'ayuda', component: AyudaComponent},
+    {path: 'terminos-legales', component: TerminosLegalesComponent }
 ];

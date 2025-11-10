@@ -1,0 +1,78 @@
+/* 🎯 Tarjetas de alianzas */
+.ally-card {
+  position: relative; /* Necesario para posicionar los pseudo-elementos (::after y ::before) dentro */
+  overflow: hidden; /* Evita que la barra de progreso o efectos salgan del borde */
+  border: 1px solid rgba(0,0,0,0.06); /* Borde sutil y elegante */
+  transition: transform 0.18s ease, box-shadow 0.18s ease; /* Animación suave al mover o hacer clic */
+  cursor: pointer; /* Cambia el cursor a mano */
+  user-select: none; /* Evita que el usuario seleccione texto accidentalmente */
+  -webkit-user-select: none; /* Compatibilidad con navegadores basados en WebKit */
+}
+
+/* 🖱️ Efecto al pasar el mouse (hover): se eleva un poco */
+.ally-card:hover {
+  transform: translateY(-6px); /* Se levanta */
+  box-shadow: 0 10px 24px rgba(0,0,0,0.08); /* Sombra sutil */
+}
+
+/* 🧩 Icono con transición suave (para rotación o escala luego) */
+.ally-card .icon {
+  transition: transform 0.15s ease, color 0.15s ease;
+}
+
+/* 👇 Efecto al mantener presionado el mouse (active): se hunde un poco */
+.ally-card:active {
+  transform: translateY(2px) scale(0.99); /* Da sensación de “clic real” */
+  box-shadow: 0 6px 14px rgba(0,0,0,0.06); /* Sombra más corta, como si estuviera presionada */
+}
+
+/* 💥 Pequeña animación del ícono cuando se mantiene presionado */
+.ally-card:active .icon {
+  transform: scale(1.08) rotate(-6deg); /* Aumenta el tamaño y gira levemente */
+}
+
+/* 🟦 Barra de progreso que aparece abajo al hacer clic */
+.ally-card::after {
+  content: ""; /* Necesario para generar el pseudo-elemento */
+  position: absolute; /* Se posiciona dentro de la tarjeta */
+  left: 0;
+  bottom: 0; /* Pegada al borde inferior */
+  height: 4px; /* Altura de la barra */
+  width: 0%; /* Inicia vacía */
+  background: linear-gradient(90deg, #0d6efd 0%, #6610f2 100%); /* Degradado azul-violeta */
+  transition: width 0.12s linear; /* Transición suave al soltar */
+  pointer-events: none; /* No bloquea clics ni eventos del usuario */
+}
+
+/* ▶️ Cuando el usuario mantiene presionado el clic, la barra se llena */
+.ally-card:active::after {
+  animation: hold-fill 2.5s linear forwards; /* Ejecuta animación de 2.5 segundos */
+}
+
+/* 🌫️ Línea sutil arriba de la barra (opcional, solo decorativa) */
+.ally-card::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 4px; /* Justo encima de la barra */
+  height: 1px;
+  width: 100%;
+  background: rgba(0,0,0,0.03); /* Muy tenue, apenas visible */
+  pointer-events: none;
+}
+
+/* ⚙️ Definición de la animación de llenado de la barra */
+@keyframes hold-fill {
+  from { width: 0%; }   /* Empieza vacía */
+  to { width: 100%; }   /* Termina llena */
+}
+
+/* 🔄 Reinicia la barra al soltar el clic */
+.ally-card:not(:active)::after {
+  animation: none; /* Cancela animación */
+  width: 0%; /* Vuelve a vacía */
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}

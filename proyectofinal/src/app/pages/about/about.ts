@@ -20,23 +20,23 @@ interface MiembroEquipo {
 export class AboutComponent {
   equipo: MiembroEquipo[] = [
     {
-      nombre: 'exclavo',
-      puesto: 'exclavo1',
-      foto: '../../../assets/fotocardabout.png',
+      nombre: 'Tomás Jara',
+      puesto: 'Tecnico en HTML',
+      foto: '../../../assets/contacto.webp',
       linkedin: 'https://ar.linkedin.com/',
       twitter: 'https://ar.linkedin.com/'
     },
     {
-      nombre: 'exclavo',
-      puesto: 'exclavo2',
-      foto: '../../../assets/fotocardabout.png',
+      nombre: 'Tomás jara',
+      puesto: 'Tecnico en CSS',
+      foto: '../../../assets/contacto.webp',
       linkedin: 'https://ar.linkedin.com/',
       twitter: 'https://ar.linkedin.com/'
     },
     {
-      nombre: 'exclavo',
-      puesto: 'exclavo3',
-      foto: '../../../assets/fotocardabout.png',
+      nombre: 'Tomas jara',
+      puesto: 'Tecnico en JavaScript y typescrip',
+      foto:'../../../assets/contacto.webp',
       linkedin: 'https://ar.linkedin.com/',
       twitter: 'https://ar.linkedin.com/'
     }

@@ -1,5 +1,5 @@
 .gif {
-  margin-top: 40px;
+  
   margin-bottom: 0px;
   position:relative;
   
@@ -12,4 +12,8 @@
   color: white;         /* color del texto */
   font-size: 4em;
   text-shadow: 2px 2px 5px black; /* mejora la legibilidad */
+}
+.carrito-abajo {
+  background-color: aqua;
+  margin-bottom: 0px;;
 }
