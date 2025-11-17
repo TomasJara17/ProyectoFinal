@@ -19,4 +19,38 @@
   object-fit: cover;
   width: 100%;
   display: block;
+}/* Ajusta la altura de las imágenes para que no se deformen */
+.card-img-top {
+  height: 200px;          /* altura fija */
+  object-fit: cover;      /* mantiene proporción y recorta si es necesario */
+}
+
+/* Sombra y bordes redondeados para todas las cards */
+.card {
+  border-radius: 0.75rem;
+}
+
+/* Ajustes del título principal */
+h1.text-center {
+  font-size: 2rem;
+}
+
+/* Ajustes responsivos para tablets */
+@media (max-width: 768px) {
+  h1.text-center {
+    font-size: 1.5rem;
+  }
+  .card-img-top {
+    height: 180px;
+  }
+}
+
+/* Ajustes responsivos para móviles */
+@media (max-width: 480px) {
+  h1.text-center {
+    font-size: 1.3rem;
+  }
+  .card-img-top {
+    height: 150px;
+  }
 }

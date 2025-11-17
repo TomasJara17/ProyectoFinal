@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   <div class="container-fluid">
     <a class="navbar-brand" href="home">Tomas</a>
     <button 
@@ -15,58 +15,53 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 
+        <!-- Links principales -->
         <li class="nav-item">
           <a class="nav-link active blanco" aria-current="page" href="home">Inicio</a>
         </li>
-
         <li class="nav-item">
           <a class="nav-link blanco" href="carrito">Mi carrito</a>
         </li>
-
         <li class="nav-item">
           <a class="nav-link blanco" href="about">Nosotros</a>
         </li>
 
+        <!-- Dropdown Galería -->
         <li class="nav-item dropdown">
-          <a 
-            class="nav-link dropdown-toggle blanco" 
-            href="#" 
-            id="navbarDropdown" 
-            role="button" 
-            data-bs-toggle="dropdown" 
-            aria-expanded="false">
+          <a class="nav-link dropdown-toggle blanco" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Galería
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
             <li><a class="dropdown-item text-dark" href="todos">Todos</a></li>
+            <li><a class="dropdown-item text-dark" href="marcas">Marcas</a></li>
           </ul>
         </li>
 
-        <!-- 🔹 Nuevos enlaces -->
+        <!-- Otros enlaces -->
         <li class="nav-item">
-          <a class="nav-link blanco" href="contacto">Contacto</a>
+          <a class="nav-link blanco " href="contacto">Contacto</a>
         </li>
-
         <li class="nav-item">
           <a class="nav-link blanco" href="alianzas">Alianzas</a>
         </li>
-
         <li class="nav-item">
-          <a class="nav-link blanco" href="servicios"></a>
+          <a class="nav-link blanco" href="servicios">Servicios</a>
         </li>
-
         <li class="nav-item">
           <a class="nav-link blanco" href="ayuda">Ayuda</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link blanco" href="terminos-legales">Terminos de uso y Servicio</a>
+          <a class="nav-link blanco" href="terminos-legales">Términos de uso y Servicio</a>
         </li>
 
       </ul>
+
+      <!-- Logo a la derecha -->
+      <span class="navbar-text ms-auto">
+        <img src="../assets/logo.png" alt="Logo" style="height:40px;">
+      </span>
+
     </div>
   </div>
 </nav>
-
-<router-outlet></router-outlet>
-
-<app-footer></app-footer>
+<router-outlet></router-outlet> <app-footer></app-footer>

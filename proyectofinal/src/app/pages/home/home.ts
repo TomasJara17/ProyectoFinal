@@ -22,6 +22,14 @@ export class Home {
   productos: Producto[] = [
     { nombre: 'RYZEN 9', imagen: '../../../assets/ryzen9.png', descripcion: 'Alto rendimiento', stock: 10, precio: 499 },
     { nombre: 'INTEL I9', imagen: '../../../assets/intel9.jpg', descripcion: 'Rendimiento extremo', stock: 8, precio: 599 },
+    { nombre: 'INTEL I5', imagen: '../../../assets/i5.webp', descripcion: 'Rendimiento medio', stock: 8, precio: 399 },
+    { nombre: 'RYZEN 3', imagen: '../../../assets/ryzen3.avif', descripcion: 'Rendimiento bajo', stock: 10, precio: 99 },
+    { nombre: 'RYZEN 5', imagen: '../../../assets/ryzen5.jpg', descripcion: 'Rendimiento medio', stock: 14, precio: 250 },
+    { nombre: 'INTEL PENTIUM GOLD', imagen: '../../../assets/ip.jpg', descripcion: 'Rendimiento bajo', stock: 4, precio: 99 },
+    { nombre: 'RYZEN 7', imagen: '../../../assets/r7.webp', descripcion: 'Rendimiento bajo', stock: 4, precio: 99 },
+    { nombre: 'INTEL XEON E3-1240 V2', imagen: '../../../assets/ix.webp', descripcion: 'Rendimiento medio', stock: 4, precio: 140 },
+
+
     // ...otros productos
   ];
 

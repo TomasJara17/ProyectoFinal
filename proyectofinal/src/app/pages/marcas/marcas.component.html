@@ -1,0 +1,24 @@
+<div class="container py-5">
+  <h2 class="text-center mb-4">Nuestros Productos</h2>
+
+  <!-- Filtros de marca -->
+  <div class="text-center mb-4">
+    <button class="btn btn-outline-primary me-2" (click)="filtrarMarca('AMD')">AMD</button>
+    <button class="btn btn-outline-success me-2" (click)="filtrarMarca('INTEL')">INTEL</button>
+  </div>
+
+  <div class="row g-4">
+    <div class="col-12 col-sm-6 col-md-4" *ngFor="let producto of productosFiltrados">
+      <div class="card h-100 shadow-sm">
+        <img [src]="producto.imagen" class="card-img-top" [alt]="producto.nombre">
+        <div class="card-body">
+          <h5 class="card-title">{{ producto.nombre }}</h5>
+          <p class="card-text">{{ producto.descripcion }}</p>
+          <p><strong>Marca:</strong> {{ producto.marca }}</p>
+          <p><strong>Precio:</strong> ${{ producto.precio }}</p>
+          <p><strong>Stock:</strong> {{ producto.stock }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

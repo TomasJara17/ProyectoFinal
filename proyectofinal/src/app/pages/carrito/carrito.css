@@ -17,3 +17,65 @@
   background-color: aqua;
   margin-bottom: 0px;;
 }
+/* Imagen decorativa */
+.gif {
+  position: relative; /* Permite posicionar el título encima */
+}
+
+.gif img {
+  width: 100%;        /* Se adapta al ancho de la pantalla */
+  height: 300px;      /* Altura fija para desktop */
+  object-fit: cover;  /* Recorta la imagen sin deformarla */
+}
+
+/* Título encima de la imagen */
+.gif .bitcount-grid-single-uniquifier {
+  font-size: 2rem;                 /* Tamaño de título grande */
+  font-weight: 700;
+  color: white;
+  text-shadow: 1px 1px 5px rgba(0,0,0,0.7); /* Sombra para mejorar visibilidad */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  padding: 0 1rem;
+}
+
+/* Carrito */
+.carrito-abajo {
+  background-color: #f8f9fa; /* Fondo claro */
+}
+
+/* Items del carrito */
+.item-carrito {
+  flex: 1 1 200px; /* Cada item ocupa al menos 200px y se adapta al contenedor */
+}
+
+/* Botón de comprar ocupa todo el ancho en móviles */
+.carrito-abajo .btn-success {
+  width: 100%;
+}
+
+/* Ajustes responsivos para tablets */
+@media (max-width: 768px) {
+  .gif .bitcount-grid-single-uniquifier {
+    font-size: 1.5rem; /* Reduce el tamaño del título */
+  }
+
+  .item-carrito {
+    min-width: 150px; /* Items más estrechos para tablets */
+  }
+}
+
+/* Ajustes responsivos para móviles */
+@media (max-width: 480px) {
+  .gif .bitcount-grid-single-uniquifier {
+    font-size: 1.2rem; /* Tamaño más pequeño en móviles */
+  }
+
+  .item-carrito {
+    min-width: 100%;  /* Cada item ocupa toda la fila en móviles */
+    margin: 0.5rem 0;
+  }
+}

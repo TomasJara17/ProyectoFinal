@@ -1,0 +1,43 @@
+/* Sección de Términos y Servicios */
+.terminos h2 {
+  font-size: 2rem;
+}
+
+.terminos h5 {
+  font-size: 1.1rem;
+  margin-top: 1.5rem;
+}
+
+.terminos p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* Ajustes responsivos */
+@media (max-width: 768px) {
+  .terminos h2 {
+    font-size: 1.5rem;
+  }
+  .terminos h5 {
+    font-size: 1rem;
+  }
+  .terminos p {
+    font-size: 0.95rem;
+  }
+  .terminos .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .terminos h2 {
+    font-size: 1.3rem;
+  }
+  .terminos h5 {
+    font-size: 0.95rem;
+  }
+  .terminos p {
+    font-size: 0.9rem;
+  }
+}

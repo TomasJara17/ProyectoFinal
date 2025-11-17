@@ -32,4 +32,57 @@ h1 {
 }
 h2{
   color: gold;
+}/* Tarjetas de equipo */
+.card {
+  border-radius: 0.75rem;       /* Bordes redondeados */
+  transition: transform 0.3s, box-shadow 0.3s; /* Animación suave al hover */
+}
+
+/* Efecto hover: sombra y leve escalado */
+.hover-shadow:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+/* Imagen de perfil */
+.card-img-top {
+  height: 250px;                /* Altura fija para uniformidad */
+  object-fit: cover;            /* Mantiene proporción y recorta si es necesario */
+  border-top-left-radius: 0.75rem;
+  border-top-right-radius: 0.75rem;
+}
+
+/* Ajustes de texto */
+.card-title {
+  font-size: 1.2rem;
+}
+
+.card-text {
+  font-size: 0.95rem;
+}
+
+/* Responsivo para tablets (≤768px) */
+@media (max-width: 768px) {
+  .card-img-top {
+    height: 200px;
+  }
+  .card-title {
+    font-size: 1.1rem;
+  }
+  .card-text {
+    font-size: 0.9rem;
+  }
+}
+
+/* Responsivo para móviles (≤480px) */
+@media (max-width: 480px) {
+  .card-img-top {
+    height: 180px;
+  }
+  .card-title {
+    font-size: 1rem;
+  }
+  .card-text {
+    font-size: 0.85rem;
+  }
 }

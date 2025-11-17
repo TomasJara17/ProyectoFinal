@@ -1,0 +1,8 @@
+/* CSS para las imágenes de las cards de Marcas */
+.card-img-top {
+  width: 200px;          /* ancho fijo */
+  height: 200px;         /* alto fijo */
+  object-fit: contain;   /* mantiene la proporción de la imagen dentro del recuadro */
+  margin: 0 auto;        /* centra la imagen horizontalmente */
+  display: block;        /* asegura que el margin funcione */
+}

@@ -1,16 +1,15 @@
-import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { Producto } from '../../models/producto';
-
+import { CommonModule } from '@angular/common';
 @Component({
-  selector: 'app-todos', // Nombre del componente
-  standalone: true,     // Componente independiente (Angular Standalone)
-  imports: [CommonModule], // Importamos CommonModule para directivas como *ngFor
-  templateUrl: './todos.html', // Archivo HTML asociado
-  styleUrls: ['./todos.css']   // Archivo CSS asociado
+  selector: 'app-marcas',
+  standalone:true,
+  imports: [CommonModule],
+  templateUrl: './marcas.component.html',
+  styleUrl: './marcas.component.css'
 })
-export class Todos {
-  // Lista de productos disponibles en la tienda
+export class MarcasComponent {
+ // Lista de productos disponibles en la tienda
   productos: Producto[] = [
        {
          nombre: 'RYZEN 9', imagen: '../../../assets/ryzen9.png', descripcion: 'Alto rendimiento', stock: 10, precio: 499,
@@ -55,4 +54,17 @@ export class Todos {
 
     // ...otros productos
   ]
+   // Variable para mostrar los productos filtrados
+  productosFiltrados: Producto[] = [...this.productos];
+
+  // Método para filtrar por marca
+  filtrarMarca(marca: string) {
+    if (marca) {
+      this.productosFiltrados = this.productos.filter(p => p.marca === marca);
+    } else {
+      this.productosFiltrados = [...this.productos]; // mostrar todos
+    }
+  }
 }
+
+

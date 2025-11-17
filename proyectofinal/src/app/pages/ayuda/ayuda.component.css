@@ -11,3 +11,44 @@
   box-shadow: none;
   border-color: #0d6efd;
 }
+/* Sección FAQ */
+.faq h2 {
+  font-size: 2rem;             /* Tamaño del título principal */
+}
+
+/* Ajuste de párrafos */
+.faq p {
+  font-size: 1rem;             /* Tamaño legible de texto */
+  line-height: 1.6;            /* Mejor legibilidad */
+}
+
+/* Accordion: texto y botones */
+.faq .accordion-button {
+  font-size: 1rem;             /* Tamaño de las preguntas */
+}
+
+/* Responsivo para tablets */
+@media (max-width: 768px) {
+  .faq h2 {
+    font-size: 1.5rem;         /* Título más pequeño en tablets */
+  }
+  .faq p {
+    font-size: 0.95rem;        /* Texto ligeramente más pequeño */
+  }
+  .faq .accordion-button {
+    font-size: 0.95rem;        /* Preguntas más pequeñas */
+  }
+}
+
+/* Responsivo para móviles */
+@media (max-width: 480px) {
+  .faq h2 {
+    font-size: 1.3rem;         /* Título pequeño en móviles */
+  }
+  .faq p {
+    font-size: 0.9rem;         /* Párrafos más pequeños */
+  }
+  .faq .accordion-button {
+    font-size: 0.9rem;         /* Preguntas más pequeñas */
+  }
+}
