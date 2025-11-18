@@ -1,0 +1,61 @@
+/* Fondo + overlay */
+.carrusel-bg {
+    position: relative;
+    min-height: 420px;
+    background-size: cover;
+    background-position: center;
+}
+
+.carrusel-bg::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.35);
+    z-index: 1;
+}
+.slide-content ul {
+    list-style: none;
+}
+#carouselOfertas1 .carousel-indicators,
+#carouselOfertas2 .carousel-indicators,
+#carouselOfertas3 .carousel-indicators {
+    display: none !important;
+}
+/* Texto a la izquierda */
+.slide-content {
+    position: relative;
+    z-index: 2;
+    padding: 50px;
+    max-width: 50%;
+    color: white;
+  padding:20px 30px; border-radius:16px; display:inline-block;
+}
+
+/* Imagen a la derecha estilo Samsung */
+.slide-img {
+    position: absolute;
+    right: 40px;
+    bottom: 20px;
+    width: 350px;
+    height: auto;
+    z-index: 2;
+    object-fit: contain;
+    filter: drop-shadow(0 0 12px rgba(0,0,0,0.6));
+}
+
+/* Botones siempre visibles */
+.carousel-control-prev,
+.carousel-control-next {
+    z-index: 3 !important;
+}
+
+/* Tu título fachero */
+.titulo-ofertas {
+    font-family: 'Anton', sans-serif;
+    font-size: 3.5rem;
+    color: #000000;
+    text-align: center;
+    letter-spacing: 5px;
+    text-shadow: 0 0 10px #8c8c8c;
+    margin: 25px 0;
+}

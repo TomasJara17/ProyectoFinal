@@ -51,8 +51,6 @@ export class MarcasComponent {
       id: 0,
       marca: 'INTEL'
     },
-
-    // ...otros productos
   ]
    // Variable para mostrar los productos filtrados
   productosFiltrados: Producto[] = [...this.productos];

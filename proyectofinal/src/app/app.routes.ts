@@ -9,6 +9,7 @@ import { Alianzas } from './pages/alianzas/alianzas';
 import { AyudaComponent } from './pages/ayuda/ayuda.component';
 import { TerminosLegalesComponent } from './pages/terminos-legales/terminos-legales.component';
 import { MarcasComponent } from './pages/marcas/marcas.component';
+import { OfertasComponent } from './pages/ofertas/ofertas.component';
 export const routes: Routes = [
     {path: '', component:Home},
     {path:'home', component:Home},
@@ -21,5 +22,6 @@ export const routes: Routes = [
     {path:'alianzas', component:Alianzas},
     {path: 'ayuda', component: AyudaComponent},
     {path: 'terminos-legales', component: TerminosLegalesComponent },
-    {path: 'marcas', component:MarcasComponent}
+    {path: 'marcas', component:MarcasComponent},
+    {path: 'ofertas', component:OfertasComponent},
 ];
