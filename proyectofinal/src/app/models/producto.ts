@@ -7,4 +7,5 @@ export interface Producto {
   descripcion: string;
   stock: number;
   precio: number;
-}
+} 
+//defino que tipo de valor tiene cada atributo

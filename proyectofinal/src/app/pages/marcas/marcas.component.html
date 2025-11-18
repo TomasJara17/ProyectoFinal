@@ -1,24 +1,43 @@
+<!-- Contenedor principal con padding arriba y abajo -->
 <div class="container py-5">
+
+  <!-- Título centrado -->
   <h2 class="text-center mb-4">Nuestros Productos</h2>
 
-  <!-- Filtros de marca -->
+  <!-- Botones de filtro por marca -->
+  <!-- Cada botón llama a la función filtrarMarca('AMD') o filtrarMarca('INTEL') -->
   <div class="text-center mb-4">
     <button class="btn btn-outline-primary me-2" (click)="filtrarMarca('AMD')">AMD</button>
     <button class="btn btn-outline-success me-2" (click)="filtrarMarca('INTEL')">INTEL</button>
   </div>
 
+  <!-- Grid responsivo de Bootstrap -->
   <div class="row g-4">
+    
+    <!-- Recorre productosFiltrados con *ngFor -->
+    <!-- col-12 (pantalla chica), col-sm-6 (tablet), col-md-4 (desktop) -->
     <div class="col-12 col-sm-6 col-md-4" *ngFor="let producto of productosFiltrados">
+
+      <!-- Tarjeta con sombra y altura completa -->
       <div class="card h-100 shadow-sm">
+
+        <!-- Imagen del producto -->
+        <!-- [src] para enlazar a la propiedad imagen del objeto -->
         <img [src]="producto.imagen" class="card-img-top" [alt]="producto.nombre">
+
+        <!-- Contenido de la tarjeta -->
         <div class="card-body">
           <h5 class="card-title">{{ producto.nombre }}</h5>
           <p class="card-text">{{ producto.descripcion }}</p>
+
+          <!-- Datos adicionales del producto -->
           <p><strong>Marca:</strong> {{ producto.marca }}</p>
           <p><strong>Precio:</strong> ${{ producto.precio }}</p>
           <p><strong>Stock:</strong> {{ producto.stock }}</p>
         </div>
+
       </div>
     </div>
+
   </div>
 </div>
